@@ -1,0 +1,53 @@
+@import "./_variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+@import "./custom.scss";
+@import "./loaders.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $body-bg;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.bg-img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-style: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+.encounter-img {
+  @extend .bg-img;
+  margin-top: 18px;
+  margin-right: auto;
+  margin-left: auto;
+  width:200px;
+  height:200px;
+  border-radius: 15%;
+}
+.pokedex-img{
+  @extend .bg-img;
+  width:80px;
+  height:80px;
+  border: 6px solid $pokedex-red;
+}
+.display-img{
+  @extend .bg-img;
+  width: 100px;
+  height: 100px;
+  
+}
+.encounter-card {
+  border: 8px solid $primary;
+}
+.display-card {
+  border: 8px solid $pokedex-red;
+}
+
